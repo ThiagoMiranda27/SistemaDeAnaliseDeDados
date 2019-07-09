@@ -20,7 +20,7 @@ public class GerenciadorVendedorTest {
 	}
 
 	@Test
-	public void testaSeVendedorFoiAdicionadoNaLista() {
+	public void testaSeVendedorFoiAdicionadoNaLista() {  // testa se o vendedor esta sendo adicionado no array
 		Reader.getFormatoArquivo().add(teste);
 		Reader.getFormatoArquivo().add(teste2);
 		gerenciadorVendedor.getVendedorList();
@@ -29,12 +29,12 @@ public class GerenciadorVendedorTest {
 	}
 
 	@Test
-	public void testaVendedorList() {
+	public void testaVendedorList() { //Testa o Array list de vendedor
 		assertNotNull(gerenciadorVendedor.getVendedores());
 	}
 
 	@Test
-	public void testaSeIraAdicionarASequencia() {
+	public void testaTotalVendedor() { //Testa total vendedor
 		Reader.getFormatoArquivo().add(teste3);
 		gerenciadorVendedor.getVendedorList();
 		assertEquals(2, gerenciadorVendedor.TotalVendedor());

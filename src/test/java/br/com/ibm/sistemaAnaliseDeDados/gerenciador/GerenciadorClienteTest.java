@@ -19,7 +19,7 @@ public class GerenciadorClienteTest {
 	}
 
 	@Test
-	public void testaSeClienteFoiAdicionadoNaLista() {
+	public void testaSeClienteFoiAdicionadoNaLista() {  // testa se o cliente esta sendo adicionado no array
 		Reader.getFormatoArquivo().add(teste);
 		Reader.getFormatoArquivo().add(teste2);
 		gerenciadorCliente.getClienteList();
@@ -27,12 +27,12 @@ public class GerenciadorClienteTest {
 	}
 
 	@Test
-	public void testaClienteList() {
+	public void testaClienteList() { //Testa o Array list de cliente
 		assertNotNull(gerenciadorCliente.getClientes());
 	}
 
 	@Test
-	public void testaSeIraAdicionarASequencia() {
+	public void testaTotalCliente() { //Testa total cliente
 		Reader.getFormatoArquivo().add(teste3);
 		gerenciadorCliente.getClienteList();
 		assertEquals(2, gerenciadorCliente.totalClientes());

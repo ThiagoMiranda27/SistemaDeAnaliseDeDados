@@ -20,7 +20,7 @@ public class GerenciadorVendasTest {
 	}
 
 	@Test
-	public void testaSeVendaFoiAdicionadoNaLista() {
+	public void testaSeVendaFoiAdicionadoNaLista() { // testa se a venda esta sendo adicionada no array
 		Reader.getFormatoArquivo().add(teste);
 		Reader.getFormatoArquivo().add(teste2);
 		gerenciadorVendas.getVendaList();
@@ -28,25 +28,25 @@ public class GerenciadorVendasTest {
 	}
 
 	@Test
-	public void testaVendaList() {
+	public void testaVendaList() { //Testa o Array list de venda
 		assertNotNull(gerenciadorVendas.getVendas());
 	}
 
 	@Test
-	public void testaSeIraAdicionarASequencia() {
+	public void testaTotalVenda() { //Testa total venda 
 		Reader.getFormatoArquivo().add(teste3);
 		gerenciadorVendas.getVendaList();
 		assertEquals(2, gerenciadorVendas.TotalVendas());
 	}
 
 	@Test
-	public void testaOPiorVendedor() {
+	public void testaOPiorVendedor() { //Testa o pior vendedor
 		gerenciadorVendas.getVendaList();
 		assertEquals("Ricardo", gerenciadorVendas.getPiorVendedor());
 	}
 
 	@Test 
-	public void testaIdVendaMaisCara() {
+	public void testaIdVendaMaisCara() { //Testa o Id da venda mais cara
 		gerenciadorVendas.getVendaList();
 		assertEquals("10", gerenciadorVendas.getIdVendaMaisCara());
 	}
