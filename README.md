@@ -50,5 +50,5 @@ Critérios de Avaliação
 ● Flexibility/Extensibility
 ● Scalability/Performance
 
-OBS de Envio:
+ - OBS de Envio:
 Enviar o projeto com a solução em anexo por email ou link para o github.
